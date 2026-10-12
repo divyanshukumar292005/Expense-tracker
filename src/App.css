@@ -1,0 +1,129 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #020c1b;
+    color: rgb(77, 58, 31);
+}
+
+.app {
+    min-height: 100vh;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.app h1 {
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+.app>p {
+    color: #666;
+    margin-bottom: 35px;
+}
+
+.expense-container {
+    width: 100%;
+    max-width: 450px;
+    margin: auto;
+    background-color: grey;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.8);
+}
+
+.expense-container button {
+    width: 100%;
+    padding: 13px;
+    border: none;
+    border-radius: 8px;
+    background: #222;
+    color: whitesmoke;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.expense-container button {
+    transition: 0.3s;
+}
+
+.expense-container button:hover {
+    background-color: #444;
+}
+
+.expense-list {
+    width: 100%;
+    max-width: 450px;
+    margin: 30px auto 0;
+    background: white;
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+    text-align: left;
+}
+
+.expense-list h2 {
+    margin-bottom: 20px;
+    text-align: center;
+    color: #222;
+}
+
+.expense-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 0;
+    border-bottom: 1px solid #eee;
+    background-color: #f8f9fa;
+    border-radius: 8px;
+    color: #222;
+    font-size: 16px;
+    align-items: center;
+    gap: 10px;
+}
+
+.expense-item:last-child {
+    border-bottom: none;
+}
+
+.expense-list button {
+    width: auto;
+    padding: 7px 12px;
+    font-size: 14px;
+}
+
+.total-expense {
+    text-align: center;
+    margin-bottom: 25px;
+    padding: 15px;
+}
+
+.total-expense h2 {
+    font-size: 32px;
+    margin-top: 8px;
+}
+
+.expense-container input {
+    width: 100%;
+    padding: 13px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 16px;
+}
+
+.expense-container input:focus {
+    outline: none;
+    border-color: #222;
+    box-shadow: 0 0 0 2px rgba(0, 0, 0, 0.8);
+}
+
+.empty-message {
+    text-align: center;
+    color: #888;
+    padding: 20px 0;
+    font-size: 15px;
+}
