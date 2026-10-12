@@ -72,7 +72,7 @@ app.delete("/api/expenses/:id", async(req, res) => {
         res.status(500).json({ message: error.message });
     }
 });
-const PORT = 5000;
+const PORT = process.env.Port || 5000;
 
 app.listen(PORT, () => {
     console.log(`Backend running on port ${PORT}`);
