@@ -11,9 +11,14 @@ app.get("/", (req, res) => {
     res.send("Expense Tracker Backend is running!");
 });
 mongoose.connect(process.env.MONGO_URI)
-    .then(() => console.log("MongoDB Connected Successfully"))
-    .catch((error) => console.log("MongoDB Connection Error:", error.message));
-
+    .then(() => {
+        console.log("MongoDB Connected Successfully");
+    })
+    .catch((error) => {
+        console.error("MongoDB Error Name:", error.name);
+        console.error("MongoDB Error Code:", error.code);
+        console.error("MongoDB Error Message:", error.message);
+    });
 const Expense = require("./Expense");
 
 app.get("/api/expenses", async(req, res) => {
